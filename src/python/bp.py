@@ -57,9 +57,9 @@ class ProcessCSV(BusinessProcess):
             msg = FhirRequest()
             msg.resource = organization
 
-            self.send_request_sync("Python.FhirClient", msg)
+            self.send_request_sync("Python.bo.FhirClient", msg)
         
         if isinstance(request,FhirRequest):
-            self.send_request_sync("Python.FhirClient", request)       
+            self.send_request_sync("Python.bo.FhirClient", request)       
 
         return None

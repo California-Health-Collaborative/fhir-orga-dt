@@ -59,7 +59,7 @@ class ServiceCSV(BusinessService):
             for row in reader:
                 requ = msg_to_send()
                 requ.resource = row
-                self.send_request_sync('Python.ProcessCSV',requ)
+                self.send_request_sync('Python.bp.ProcessCSV',requ)
 
         # Once the file is read, it is moved to the used folder
         os.rename(self.path + self.filename, self.path + "used/" + self.filename)

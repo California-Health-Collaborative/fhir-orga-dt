@@ -39,10 +39,6 @@
     zw $SYSTEM.OBJ.ImportDir("/irisdev/app/src", "*.cls", "cubk", .tErrors, 1)
     zpm "install pex-embbeded-python"
 
-    zw ##class(Grongier.PEX.Utils).RegisterComponent("bo","FhirClient","/irisdev/app/src/python/",1,"Python.FhirClient")
-    zw ##class(Grongier.PEX.Utils).RegisterComponent("bp","ProcessCSV","/irisdev/app/src/python/",1,"Python.ProcessCSV")
-    zw ##class(Grongier.PEX.Utils).RegisterComponent("bs","ServiceCSV","/irisdev/app/src/python/",1,"Python.ServiceCSV")
-    
     set ^EnsPortal.Settings("SuperUser","LastProduction")  = "ProductionCSV.cls"
     
     h
