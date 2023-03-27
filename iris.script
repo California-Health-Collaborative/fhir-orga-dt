@@ -39,6 +39,6 @@
     zw $SYSTEM.OBJ.ImportDir("/irisdev/app/src", "*.cls", "cubk", .tErrors, 1)
     zpm "install pex-embbeded-python"
 
-    set ^EnsPortal.Settings("SuperUser","LastProduction")  = "ProductionCSV.cls"
+    set ^EnsPortal.Settings("SuperUser","LastProduction")  = "Python.ProductionCSV"
     
     h
